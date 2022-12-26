@@ -12,11 +12,11 @@ function installUnzip(){
 }
 
 function download(){
-  wget -O "/tmp/BILIBILI-HELPER.zip" "https://glare.now.sh/JunzhouLiu/BILIBILI-HELPER/BILIBILI-HELPER-v${1}.zip"
-  mkdir "${HOME}/BILIBILI-HELPER"
+  wget -O "/tmp/bilibili-helper.zip" "https://glare.now.sh/JunzhouLiu/bilibili-helper/bilibili-helper-v${1}.zip"
+  mkdir "${HOME}/bilibili-helper"
   command -v unzip >/dev/null 2>&1 || installUnzip
-  unzip -o "/tmp/BILIBILI-HELPER.zip" -d "${HOME}/BILIBILI-HELPER"
-  mv "${HOME}/BILIBILI-HELPER/BILIBILI-HELPER-v${1}.jar" "${HOME}/BILIBILI-HELPER/BILIBILI-HELPER.jar" -f
+  unzip -o "/tmp/bilibili-helper.zip" -d "${HOME}/bilibili-helper"
+  mv "${HOME}/bilibili-helper/bilibili-helper-v${1}.jar" "${HOME}/bilibili-helper/bilibili-helper.jar" -f
 }
 
 function setCron(){
@@ -24,10 +24,10 @@ function setCron(){
   if [ ! -f "$file" ]; then
     touch "$file"
   else
-    find=`grep "BILIBILI-HELPER" "$file"`
+    find=`grep "bilibili-helper" "$file"`
     if [ -z "$find" ]; then
       echo "" >> "$file"
-	  echo "30 10 * * * cd ${HOME}/BILIBILI-HELPER; java -jar ./BILIBILI-HELPER.jar ${1} ${2} ${3} ${4} >>/var/log/cron.log 2>&1 &" >> "$file"
+	  echo "30 10 * * * cd ${HOME}/bilibili-helper; java -jar ./bilibili-helper.jar ${1} ${2} ${3} ${4} >>/var/log/cron.log 2>&1 &" >> "$file"
 	  service crond reload
 	  service cron reload
 	fi

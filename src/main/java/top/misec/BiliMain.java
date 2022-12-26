@@ -52,7 +52,6 @@ public class BiliMain {
             ServerVerify.verifyInit(args[3]);
         }
 
-
         VersionInfo.printVersionInfo();
         //每日任务65经验
         Config.getInstance().configInit();
