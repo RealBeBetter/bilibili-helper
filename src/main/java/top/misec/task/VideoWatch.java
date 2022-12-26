@@ -28,7 +28,7 @@ public class VideoWatch implements Task {
     public void run() {
 
         JsonObject dailyTaskStatus = getDailyTaskStatus();
-        String bvid = getVideoId.getRegionRankingVideoBvid();
+        String bvid = getVideoId.getRegionRankingVideoBvId();
         if (!dailyTaskStatus.get("watch").getAsBoolean()) {
             watchVideo(bvid);
         } else {

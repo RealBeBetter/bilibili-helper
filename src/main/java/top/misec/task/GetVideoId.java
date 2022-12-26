@@ -14,10 +14,11 @@ import java.util.Random;
 import java.util.concurrent.ArrayBlockingQueue;
 
 /**
- * @author @JunzhouLiu
- * @created 2020/11/12 13:17
+ * 得到视频id
+ *
+ * @author JunzhouLiu
+ * @date 2022/12/26 21:41
  */
-
 @Log4j2
 @Data
 public class GetVideoId {
@@ -47,9 +48,9 @@ public class GetVideoId {
     /**
      * 从动态中获取随机bv号
      */
-    public String getFollowUpRandomVideoBvid() {
+    public String getFollowUpRandomVideoBvId() {
         if (followUpVideoList.size() == 0) {
-            return getRegionRankingVideoBvid();
+            return getRegionRankingVideoBvId();
         }
         Random random = new Random();
         return followUpVideoList.get(random.nextInt(followUpVideoList.size()));
@@ -62,13 +63,13 @@ public class GetVideoId {
      */
     @ExtensionMethod
     public String getFollowUpRecentVideoBvid() {
-        return followUpVideoQueue.peek() == null ? getRegionRankingVideoBvid() : followUpVideoQueue.poll();
+        return followUpVideoQueue.peek() == null ? getRegionRankingVideoBvId() : followUpVideoQueue.poll();
     }
 
     /**
      * 排行榜获取随机bv号
      */
-    public String getRegionRankingVideoBvid() {
+    public String getRegionRankingVideoBvId() {
         Random random = new Random();
         return rankVideoList.get(random.nextInt(rankVideoList.size()));
     }
@@ -132,6 +133,7 @@ public class GetVideoId {
         }
         return videoList;
     }
+
     public void videoUpdate(String mid){
         String urlParam = "?mid=" + mid + "&ps=30&tid=0&pn=1&keyword=&order=pubdate&jsonp=jsonp";
         JsonObject resultJson = HttpUtil.doGet(ApiList.getBvIdByCreate + urlParam);

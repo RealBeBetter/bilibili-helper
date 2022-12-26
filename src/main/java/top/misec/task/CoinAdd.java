@@ -84,9 +84,9 @@ public class CoinAdd implements Task {
         while (needCoins > 0 && needCoins <= maxNumberOfCoins) {
             String bvid;
             if (coinAddPriority == 1 && addCoinOperateCount < 7) {
-                bvid = getVideoId.getFollowUpRandomVideoBvid();
+                bvid = getVideoId.getFollowUpRandomVideoBvId();
             } else {
-                bvid = getVideoId.getRegionRankingVideoBvid();
+                bvid = getVideoId.getRegionRankingVideoBvId();
             }
 
             addCoinOperateCount++;
