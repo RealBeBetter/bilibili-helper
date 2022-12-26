@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>top.misec</groupId>
-    <artifactId>BILIBILI-HELPER</artifactId>
+    <artifactId>bilibili-helper</artifactId>
     <version>1.4.4</version>
     <properties>
         <skipTests>true</skipTests>

@@ -24,7 +24,6 @@ public class VersionInfo {
         JsonObject jsonObject = new JsonParser().parse(release).getAsJsonObject();
         releaseVersion = jsonObject.get("tag_main").getAsString();
         releaseInfo = LoadFileResource.loadJsonFromAsset("release.info");
-
     }
 
     public static void printVersionInfo() {
