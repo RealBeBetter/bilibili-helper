@@ -3,14 +3,14 @@ package top.misec.pojo.userinfobean;
 import lombok.Data;
 
 /**
+ * 级别信息
  * Auto-generated
  *
  * @author Junzhou Liu
- * @create 2020/10/11 4:21
+ * @date 2022/12/26 21:14
  */
-
 @Data
-public class Level_info {
+public class LevelInfo {
 
     private int current_level;
     private int current_min;

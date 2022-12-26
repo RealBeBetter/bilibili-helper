@@ -7,10 +7,11 @@ import top.misec.utils.HttpUtil;
 import top.misec.utils.LoadFileResource;
 
 /**
+ * 配置
  * Auto-generated: 2020-10-13 17:10:40
  *
  * @author Junzhou Liu
- * @create 2020/10/13 17:11
+ * @date 2022/12/26 21:11
  */
 @Slf4j
 @Data

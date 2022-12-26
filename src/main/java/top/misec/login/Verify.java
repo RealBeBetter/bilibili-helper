@@ -2,8 +2,10 @@ package top.misec.login;
 
 
 /**
+ * 验证
+ *
  * @author Junzhou Liu
- * @create 2020/10/11 16:49
+ * @date 2022/12/26 21:11
  */
 public class Verify {
 

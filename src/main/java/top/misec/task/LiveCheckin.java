@@ -16,9 +16,6 @@ import static top.misec.task.TaskInfoHolder.STATUS_CODE_STR;
 @Slf4j
 public class LiveCheckin implements Task {
 
-
-    private final String taskName = "直播签到";
-
     @Override
     public void run() {
         JsonObject liveCheckinResponse = HttpUtil.doGet(ApiList.liveCheckin);
@@ -34,6 +31,6 @@ public class LiveCheckin implements Task {
 
     @Override
     public String getName() {
-        return taskName;
+        return "直播签到";
     }
 }

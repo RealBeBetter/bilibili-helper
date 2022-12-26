@@ -9,10 +9,11 @@ import top.misec.push.model.PushMetaInfo;
 import top.misec.utils.LoadFileResource;
 
 /**
+ * 服务器推送
+ *
  * @author @JunzhouLiu @Kurenai
- * @create 2020/10/21 17:39
+ * @date 2022/12/26 21:19
  */
-
 @Slf4j
 public class ServerPush {
 
@@ -35,7 +36,7 @@ public class ServerPush {
             } else if (ServerVerify.getFtkey().length() == PushPlusPush.PUSH_PLUS_CHANNEL_TOKEN_DEFAULT_LENGTH) {
                 target = PushHelper.Target.PUSH_PLUS;
                 log.info("本次执行推送日志到Push Plus");
-            }else if (ServerVerify.getFtkey().length() == WeiXinPush.WEIXIN_CHANNEL_TOKEN_DEFAULT_LENGTH) {
+            } else if (ServerVerify.getFtkey().length() == WeiXinPush.WEIXIN_CHANNEL_TOKEN_DEFAULT_LENGTH) {
                 target = PushHelper.Target.WEIXING;
                 log.info("本次执行推送日志到企业微信");
             }

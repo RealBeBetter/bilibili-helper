@@ -6,13 +6,13 @@ import top.misec.login.Verify;
 import top.misec.utils.HttpUtil;
 
 /**
- * 部分API简单封装。
+ * 部分API简单封装
  *
  * @author Junzhou Liu
- * @create 2020/10/14 14:27
+ * @date 2022/12/26 21:12
  */
 @Slf4j
-public class oftenAPI {
+public class OftenApi {
 
     /**
      * @return 返回主站查询到的硬币余额，查询失败返回0.0

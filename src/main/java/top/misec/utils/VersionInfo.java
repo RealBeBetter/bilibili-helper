@@ -6,8 +6,10 @@ import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 
 /**
+ * 版本信息
+ *
  * @author Junzhou Liu
- * @create 2020/11/21 15:22
+ * @date 2022/12/26 21:17
  */
 @Slf4j
 @Data

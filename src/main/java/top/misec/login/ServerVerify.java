@@ -3,13 +3,14 @@ package top.misec.login;
 import lombok.Getter;
 
 /**
+ * 服务器验证
+ *
  * @author Junzhou Liu
- * @create 2020/10/21 19:57
+ * @date 2022/12/26 21:08
  */
 @Getter
 public class ServerVerify {
 
-    private final static ServerVerify SERVER_VERIFY = new ServerVerify();
     private static String FTKEY = null;
     private static String CHATID = null;
 
@@ -28,9 +29,5 @@ public class ServerVerify {
 
     public static String getChatId() {
         return CHATID;
-    }
-
-    public static ServerVerify getInstance() {
-        return SERVER_VERIFY;
     }
 }

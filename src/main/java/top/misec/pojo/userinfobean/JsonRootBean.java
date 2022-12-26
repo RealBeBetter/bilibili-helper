@@ -1,18 +1,15 @@
 package top.misec.pojo.userinfobean;
 
 /**
- * Auto-generated
+ * json根bean
  *
- * @author Junzhou Liu
- * @create 2020/10/11 4:21
+ * @author Real
+ * @date 2022/12/26 21:04
  */
-
 @lombok.Data
 public class JsonRootBean {
-
     private int code;
     private String message;
     private int ttl;
     private Data data;
-
 }

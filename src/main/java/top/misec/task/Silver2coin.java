@@ -3,7 +3,7 @@ package top.misec.task;
 import com.google.gson.JsonObject;
 import lombok.extern.slf4j.Slf4j;
 import top.misec.apiquery.ApiList;
-import top.misec.apiquery.oftenAPI;
+import top.misec.apiquery.OftenApi;
 import top.misec.utils.HttpUtil;
 
 import static top.misec.task.TaskInfoHolder.STATUS_CODE_STR;
@@ -34,7 +34,7 @@ public class Silver2coin implements Task {
             if (responseCode == 0) {
                 log.info("银瓜子兑换硬币成功");
 
-                double coinMoneyAfterSilver2Coin = oftenAPI.getCoinBalance();
+                double coinMoneyAfterSilver2Coin = OftenApi.getCoinBalance();
 
                 log.info("当前银瓜子余额: {}", (silverNum - exchangeRate));
                 log.info("兑换银瓜子后硬币余额: {}", coinMoneyAfterSilver2Coin);

@@ -12,12 +12,8 @@ import top.misec.utils.HttpUtil;
  * @author @JunzhouLiu @Kurenai
  * @since 2020-11-22 5:22
  */
-
 @Slf4j
 public class MangaSign implements Task {
-
-
-    private final String taskName = "漫画签到";
 
     @Override
     public void run() {
@@ -35,6 +31,6 @@ public class MangaSign implements Task {
 
     @Override
     public String getName() {
-        return taskName;
+        return "漫画签到";
     }
 }

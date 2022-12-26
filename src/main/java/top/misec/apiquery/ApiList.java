@@ -1,8 +1,10 @@
 package top.misec.apiquery;
 
 /**
+ * api列表
+ *
  * @author Junzhou Liu
- * @create 2020/10/11 3:40
+ * @date 2022/12/26 21:11
  */
 public class ApiList {
 
@@ -17,7 +19,7 @@ public class ApiList {
     public static String isCoin = "https://api.bilibili.com/x/web-interface/archive/coins";
     public static String getRegionRanking = "https://api.bilibili.com/x/web-interface/ranking/region";
     public static String reward = "https://api.bilibili.com/x/member/web/exp/reward";
-    public static String weixingPush = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=";
+    public static String wechatPush = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=";
 
     /**
      * 查询获取已获取的投币经验
@@ -84,8 +86,11 @@ public class ApiList {
      */
     public static String mangaRead = "https://manga.bilibili.com/twirp/bookshelf.v1.Bookshelf/AddHistory";
     /**
-     *
+     * 获取BV号
      */
-    public static String getBvidByCreate = "https://api.bilibili.com/x/space/arc/search";
-    public static String getCionLog="https://api.bilibili.com/x/member/web/coin/log?jsonp=jsonp";
+    public static String getBvIdByCreate = "https://api.bilibili.com/x/space/arc/search";
+    /**
+     * 获取硬币日志
+     */
+    public static String getCoinLog = "https://api.bilibili.com/x/member/web/coin/log?jsonp=jsonp";
 }

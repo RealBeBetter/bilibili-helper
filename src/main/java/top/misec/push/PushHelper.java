@@ -65,7 +65,6 @@ public final class PushHelper {
          * 钉钉
          */
         DING_TALK,
-
         /**
          * Push Plus
          */
@@ -73,6 +72,8 @@ public final class PushHelper {
         /**
          * 企业微信
          */
-        WEIXING
+        WEIXING,
+
+        ;
     }
 }

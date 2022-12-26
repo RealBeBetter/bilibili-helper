@@ -134,7 +134,7 @@ public class GetVideoId {
     }
     public void videoUpdate(String mid){
         String urlParam = "?mid=" + mid + "&ps=30&tid=0&pn=1&keyword=&order=pubdate&jsonp=jsonp";
-        JsonObject resultJson = HttpUtil.doGet(ApiList.getBvidByCreate + urlParam);
+        JsonObject resultJson = HttpUtil.doGet(ApiList.getBvIdByCreate + urlParam);
         JsonArray jsonArray=resultJson.getAsJsonObject("data").getAsJsonObject("list").getAsJsonArray("vlist");
 
         if (jsonArray != null) {

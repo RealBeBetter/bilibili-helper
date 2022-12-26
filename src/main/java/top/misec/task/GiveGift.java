@@ -8,16 +8,16 @@ import top.misec.login.Verify;
 import top.misec.utils.HttpUtil;
 
 /**
+ * 给礼物
  * B站直播送出即将过期的礼物
  *
  * @author srcrs
- * @Time 2020-10-13
+ * @date 2022/12/26 21:18
  */
 
 @Slf4j
 public class GiveGift implements Task {
 
-    private final String taskName = "B站直播送出即将过期的礼物";
     /**
      * 获取日志记录器对象
      */
@@ -85,7 +85,6 @@ public class GiveGift implements Task {
      *
      * @return String
      * @author srcrs
-     * @Time 2020-10-13
      */
     public String xliveGetRecommend() {
         return HttpUtil.doGet("https://api.live.bilibili.com/relation/v1/AppWeb/getRecommendList")
@@ -101,7 +100,6 @@ public class GiveGift implements Task {
      * @param roomId up 主的 uid
      * @return String
      * @author srcrs
-     * @Time 2020-10-13
      */
     public String xliveGetRoomUid(String roomId) {
         JsonObject pJson = new JsonObject();
@@ -119,7 +117,6 @@ public class GiveGift implements Task {
      * @param mid 即 uid
      * @return String 返回一个直播间id
      * @author srcrs
-     * @Time 2020-11-20
      */
     public String getRoomInfoOld(String mid) {
         JsonObject pJson = new JsonObject();
@@ -135,7 +132,6 @@ public class GiveGift implements Task {
      *
      * @return JsonArray
      * @author srcrs
-     * @Time 2020-10-13
      */
     public JsonArray xliveGiftBagList() {
         return HttpUtil.doGet("https://api.live.bilibili.com/xlive/web-room/v1/gift/bag_list")
@@ -146,10 +142,9 @@ public class GiveGift implements Task {
     /**
      * B站直播送出背包的礼物
      *
-     * @param requestBody
+     * @param requestBody 请求体
      * @return JsonObject
      * @author srcrs
-     * @Time 2020-10-13
      */
     public JsonObject xliveBagSend(String requestBody) {
 
@@ -169,7 +164,6 @@ public class GiveGift implements Task {
      *
      * @return JsonObject 返回一个包含 uid 和 RooId 的 json 对象
      * @author srcrs
-     * @Time 2020-11-20
      */
     public JsonObject getuidAndRid() {
         /* 直播间 id */
@@ -205,6 +199,6 @@ public class GiveGift implements Task {
 
     @Override
     public String getName() {
-        return taskName;
+        return "B站直播送出即将过期的礼物";
     }
 }

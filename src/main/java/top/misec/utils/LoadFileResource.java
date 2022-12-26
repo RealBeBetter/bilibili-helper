@@ -6,9 +6,10 @@ import java.io.*;
 import java.nio.charset.StandardCharsets;
 
 /**
+ * 加载文件资源，工具类通过流的方式读取文件
+ *
  * @author Junzhou Liu
- * @create 2020/10/17 19:31
- * 工具类通过流的方式读取文件
+ * @date 2022/12/26 21:16
  */
 @Slf4j
 public class LoadFileResource {

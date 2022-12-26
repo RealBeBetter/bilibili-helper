@@ -12,7 +12,6 @@ import lombok.Getter;
 @Getter
 @Builder
 public class PushMetaInfo {
-
     /**
      * TOKEN
      */
@@ -32,5 +31,4 @@ public class PushMetaInfo {
      * 失败后重试间隔
      */
     private final long retryInterval;
-
 }

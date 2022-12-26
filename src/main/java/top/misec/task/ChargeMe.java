@@ -3,7 +3,7 @@ package top.misec.task;
 import com.google.gson.JsonObject;
 import lombok.extern.slf4j.Slf4j;
 import top.misec.apiquery.ApiList;
-import top.misec.apiquery.oftenAPI;
+import top.misec.apiquery.OftenApi;
 import top.misec.config.Config;
 import top.misec.login.Verify;
 import top.misec.utils.HelpUtil;
@@ -53,7 +53,7 @@ public class ChargeMe implements Task {
         }
 
         if (!"0".equals(configChargeUserId)) {
-            String userName = oftenAPI.queryUserName(configChargeUserId);
+            String userName = OftenApi.queryUserName(configChargeUserId);
             if ("1".equals(userName)) {
                 userId = Verify.getInstance().getUserId();
                 log.info("充电对象已置为你本人");

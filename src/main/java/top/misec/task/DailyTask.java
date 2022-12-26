@@ -13,8 +13,10 @@ import static top.misec.task.TaskInfoHolder.STATUS_CODE_STR;
 import static top.misec.task.TaskInfoHolder.calculateUpgradeDays;
 
 /**
+ * 每日任务
+ *
  * @author @JunzhouLiu @Kurenai
- * @create 2020/10/11 20:44
+ * @date 2022/12/26 21:17
  */
 @Log4j2
 public class DailyTask {

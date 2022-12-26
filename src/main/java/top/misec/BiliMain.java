@@ -3,10 +3,10 @@ package top.misec;
 import com.google.gson.Gson;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import top.misec.org.slf4j.impl.StaticLoggerBinder;
 import top.misec.config.Config;
 import top.misec.login.ServerVerify;
 import top.misec.login.Verify;
+import top.misec.org.slf4j.impl.StaticLoggerBinder;
 import top.misec.task.DailyTask;
 import top.misec.task.ServerPush;
 import top.misec.utils.VersionInfo;
@@ -15,12 +15,10 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.logging.LogManager;
 
-
 /**
  * @author Junzhou Liu
- * @create 2020/10/11 2:29
+ * @date 2022/12/26 21:17
  */
-
 public class BiliMain {
     private static final Logger log;
 

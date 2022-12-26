@@ -21,7 +21,7 @@ public class WeiXinPush extends AbstractPush {
 
     @Override
     protected String generatePushUrl(PushMetaInfo metaInfo) {
-        return ApiList.weixingPush + metaInfo.getToken();
+        return ApiList.wechatPush + metaInfo.getToken();
     }
 
     @Override

@@ -20,8 +20,6 @@ import static top.misec.task.TaskInfoHolder.userInfo;
 @Slf4j
 public class UserCheck implements Task {
 
-    private final String taskName = "登录检查";
-
     @Override
     public void run() {
         String requestPram = "";
@@ -40,7 +38,6 @@ public class UserCheck implements Task {
                 log.debug(String.valueOf(userJson));
                 log.warn("Cookies可能失效了,请仔细检查Github Secrets中DEDEUSERID SESSDATA BILI_JCT三项的值是否正确、过期");
             }
-
             log.info("用户名称: {}", HelpUtil.userNameEncode(userInfo.getUname()));
             log.info("硬币余额: " + userInfo.getMoney());
         }
@@ -49,6 +46,6 @@ public class UserCheck implements Task {
 
     @Override
     public String getName() {
-        return taskName;
+        return "登录检查";
     }
 }

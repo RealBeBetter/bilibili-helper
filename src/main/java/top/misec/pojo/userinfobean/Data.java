@@ -1,22 +1,17 @@
 package top.misec.pojo.userinfobean;
 
-import lombok.Getter;
-import lombok.Setter;
-
 /**
- * Auto-generated
+ * 数据
  *
- * @author Junzhou Liu
- * @create 2020/10/11 4:21
+ * @author Real
+ * @date 2022/12/26 21:04
  */
-@Getter
-@Setter
+@lombok.Data
 public class Data {
-
     private boolean isLogin;
     private int email_verified;
     private String face;
-    private Level_info level_info;
+    private LevelInfo level_info;
     private long mid;
     private int mobile_verified;
     private double money;
@@ -31,7 +26,7 @@ public class Data {
     private int vipType;
     private int vip_pay_type;
     private int vip_theme_type;
-    private Vip_label vip_label;
+    private VipLabel vipLabel;
     private int vip_avatar_subscript;
     private String vip_nickname_color;
     private Wallet wallet;
@@ -39,6 +34,4 @@ public class Data {
     private String shop_url;
     private int allowance_count;
     private int answer_status;
-
-
 }

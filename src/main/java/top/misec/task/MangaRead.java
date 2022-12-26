@@ -8,8 +8,10 @@ import top.misec.utils.HttpUtil;
 import static top.misec.task.TaskInfoHolder.STATUS_CODE_STR;
 
 /**
+ * 漫画阅读
+ *
  * @author Junzhou Liu
- * @create 2021/1/13 17:50
+ * @date 2022/12/26 21:19
  */
 @Slf4j
 public class MangaRead implements Task {

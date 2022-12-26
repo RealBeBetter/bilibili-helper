@@ -31,16 +31,6 @@ Lv6 吧\~\~\~\~
 
 **请不要滥用相关 API，让我们一起爱护 B 站 ❤**
 
-<div align="center">
-
-[也可点击此处一键加群](https://qm.qq.com/cgi-bin/qm/qr?k=m_M1Fydi3MvrVAEM0Sp6hDfZF4N2SpXU&jump_from=webapi)
-
-qq 群二维码
-
-![qq群二维码](docs/IMG/qqgroup.png)
-
-</div>
-
 ## 功能列表
 
 - [x] 每天上午 9 点 10 分自动开始任务。_【运行时间可自定义】_

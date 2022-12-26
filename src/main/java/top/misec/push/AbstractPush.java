@@ -7,6 +7,9 @@ import top.misec.push.model.PushResult;
 import top.misec.push.model.RetryContext;
 import top.misec.utils.HttpUtil;
 
+import javax.swing.text.html.Option;
+import java.util.Optional;
+
 /**
  * 推送抽象类；公共模板方法封装
  *
@@ -19,7 +22,7 @@ public abstract class AbstractPush implements Push {
     @Override
     public final PushResult doPush(PushMetaInfo metaInfo, String content) {
         String url = generatePushUrl(metaInfo);
-        assert null != url : "推送URL不能为空";
+        Optional.ofNullable(url).orElseThrow(() -> new RuntimeException("推送URL不能为空"));
         String pushContent = generatePushBody(metaInfo, content);
         JsonObject jsonObject = HttpUtil.doPost(url, pushContent);
         boolean pushStatus = checkPushStatus(jsonObject);

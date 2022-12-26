@@ -23,10 +23,11 @@ import java.util.Map;
 import java.util.Optional;
 
 /**
+ * http工具类
+ *
  * @author Junzhou Liu
- * @create 2020/10/11 4:03
+ * @date 2022/12/26 21:16
  */
-
 @Slf4j
 @Data
 public class HttpUtil {
