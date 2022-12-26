@@ -84,7 +84,7 @@ Lv6 吧\~\~\~\~
 4. 按 F12 打开 「开发者工具」 找到 应用程序/Application -\> 存储 -\> Cookies
 5. 找到 `bili_jct` `SESSDATA` `DEDEUSERID` 三项，并复制值，后面需要用到。
 
-![图示](docs/IMG/20201012001307.png)
+![image-20221226212931396](https://fastly.jsdelivr.net/gh/RealBeBetter/image/img/202212262129269.png)
 
 **请各位使用 Actions 时务必遵守 Github 条款。不要滥用 Actions 服务。**
 
@@ -217,12 +217,10 @@ tips:从1.4.1版本开始，随机视频投币有一定的概率会将硬币投�
 
 1. 前往 [sct.ftqq.com](https://sct.ftqq.com/sendkey)点击登入，创建账号。
 2. 点击点[SendKey](https://sct.ftqq.com/sendkey) ，生成一个 Key。将其增加到 Github Secrets 中，变量名为 `SERVERPUSHKEY`
+   ![image-20221226212638814](https://fastly.jsdelivr.net/gh/RealBeBetter/image/img/202212262126233.png)
 3. [配置消息通道](https://sct.ftqq.com/forward) ，选择方糖服务号，保存即可。
 4. 推送效果展示
-   ![图示](docs/IMG/wechatMsgPush.png)
-
-**
-旧版推送渠道[sc.ftqq.com](http://sc.ftqq.com/9.version0) 即将与 4 月底下线，请前往[sct.ftqq.com](https://sct.ftqq.com/sendkey)生成`Turbo`版本的`Key`，注意，申请 Turbo 版 Key 后请配置消息通道，如果想沿用以前的推送方式，选择方糖服务号即可**
+   旧版推送渠道[sc.ftqq.com](http://sc.ftqq.com/9.version0) 即将与 4 月底下线，请前往[sct.ftqq.com](https://sct.ftqq.com/sendkey)生成`Turbo`版本的`Key`，注意，申请 Turbo 版 Key 后请配置消息通道，如果想沿用以前的推送方式，选择方糖服务号即可**
 
 ### Telegram 订阅执行结果
 
@@ -298,12 +296,6 @@ _特别注意：需要先与机器人之间创建会话，机器人才能下发�
 
 感谢 JetBrains 对本项目的支持。
 
-[![JetBrains](docs/IMG/jetbrains.svg)](https://www.jetbrains.com/?from=BILIBILI-HELPER)
-
 ## License
 
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FJunzhouLiu%2FBILIBILI-HELPER.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FJunzhouLiu%2FBILIBILI-HELPER?ref=badge_large)
-
-## Stargazers over time
-
-[![Stargazers over time](https://starchart.cc/JunzhouLiu/BILIBILI-HELPER.svg)](https://starchart.cc/JunzhouLiu/BILIBILI-HELPER)
