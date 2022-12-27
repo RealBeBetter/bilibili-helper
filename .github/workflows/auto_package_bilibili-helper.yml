@@ -6,6 +6,10 @@ on:
       - main
     paths:
       - "src/main/resources/release.json"
+  workflow_dispatch:
+
+  schedule:
+    - cron: "0 13 * * *"
 
 jobs:
   build:
