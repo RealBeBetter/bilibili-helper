@@ -86,3 +86,8 @@ jobs:
           asset_path: ./bilibili-helper v${{steps.tag_latest.outputs.value}}.zip
           asset_name: bilibili-helper-v${{steps.tag_latest.outputs.value}}.zip
           asset_content_type: application/zip
+
+      - name: Run Work
+        id: run-work
+        run: |
+          sh start.sh
