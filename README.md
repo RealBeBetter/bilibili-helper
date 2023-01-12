@@ -286,11 +286,3 @@ _特别注意：需要先与机器人之间创建会话，机器人才能下发�
 - **基于本项目的 runer 项目：[KurenaiRyu/bilibili-helper-runer](https://github.com/KurenaiRyu/bilibili-helper-runer)**
 
 - **基于本项目的 k8s 项目：[yangyang0507/k8s-bilibili-helper](https://github.com/yangyang0507/k8s-bilibili-helper)**
-
-## 致谢
-
-感谢 JetBrains 对本项目的支持。
-
-## License
-
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FRealBeBetter%2Fbilibili-helper.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FRealBeBetter%2Fbilibili-helper?ref=badge_large)
